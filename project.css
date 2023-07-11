@@ -1,0 +1,172 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color:black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  color: white;
+}
+nav{
+  display: flex;
+  justify-content: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+  padding: 20px;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: red;
+  border: solid black 2px;
+}
+.hr1{
+  width:50%;
+  margin-bottom: 50px;
+  margin-right: 290px;
+}
+.hero{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+  font-size: 135%;
+  animation-name: myAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: ease-out;
+}
+  
+  /* Define the animation */
+  @keyframes myAnimation {
+      0% {
+          transform: translateX(0px);
+      }
+      50% {
+          transform: translateX(100px);
+      }
+      100% {
+          transform: translateX(0px);
+      }
+  }
+
+.hero-text{
+  padding-top: 80px;
+}
+.hero-btn{
+ display: inline-block;
+ padding: 10px;
+ background-color: black;
+ border: 2px solid white;
+ font-size: 18px;
+ border-radius: 5px;
+ margin-top: 10px;
+ transition: 0.4s ease;
+ box-shadow: 100px; 
+}
+.hero-btn a{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+.hero-btn a:hover{
+  background-color: red;
+  color: white;
+}
+
+.hero-img img{
+  border: solid white 2px;
+}
+.hr2{
+  width: 30%;
+  margin-top: 20px;
+  margin-left:80px;
+  animation-name: myMovement;
+  animation-duration: 5s;
+  animation-iteration-count: ease-out;
+}
+ /* Define the animation */
+ @keyframes myMovement {
+  0% {
+      transform: translateX(100px);
+  }
+  50% {
+      transform: translateX(0px);
+  }
+  100% {
+      transform: translateX(100px);
+  }
+}
+.hr3{
+  width: 50%;
+  margin-bottom: 20px;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 350px;
+  height: 400px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: transparent;
+}
+.team-section {
+  text-align: center;
+}
+
+.team-member {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.team-member img {
+  width: 150px;
+  border-radius: 5%;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+}
+
+footer div {
+  margin: 0 auto;
+  width: 90%;
+}
+
+footer ul {
+  list-style: none;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+footer ul li img {
+  width: 30px;
+}
